@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primarysoft: #f3f3f3;
+    --sidebarColor: #ffffff;
+    --panelColor : #4895ef;
+    --factColor: #9d4edd;
+    --textColor: #000000;
+}
+
+.sidebar{
+    background: var(--sidebarColor);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar.open {
+    position: fixed;
+    width: 300px;
+    z-index: 2001;
+    display: block !important;
+    background: lightcoral;
+}
+
+.logo {
+    background: var();
+}
+
+/* .nav-menu {
+
+} */
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-title {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #949494;
+}
+
+.menu-item {
+    transition: 0.5s;
+}
+
+.menu-item:hover {
+    background-color: #e7e7e7e7;
+    border-radius: 0.25rem;
+}
+
+.menu-item-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: var(--textColor);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.menu-item-link.active {
+    background-color: var(--panelColor);
+    color: white !important;
+}
+
+.menu-item-link:hover {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+/* .menu-item-link span {
+
+}
+
+.menu-item-link i {
+
+} */
+
+.menu-spacer {
+    padding: 0.5rem 0;
+}
+
+.content {
+    background-color: var(--primarysoft);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 0.125rem 025rem rgba(0, 0, 0, .075) inset;
+}
+
+.btn {
+    background: var(--panelColor);
+}
+
+.tool-bar {
+    background: var(--sidebarColor);
+}
+
+.panel {
+    background: var(--panelColor);
+}
+
+.header {
+    position: sticky;
+    top: 0.2rem;
+    z-index: 2000;
+}
+
+.menu-btn {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.section-2 {
+    background: var(--sidebarColor);
+}
+
+.card {
+    border: none;
+}
+
+.card-1 {
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-2 {
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-3 {
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-4 {
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.status-card {
+    transition: 0.3s;
+}
+
+.status-card:hover {
+    transform: translateY(-3px);
+    /* box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.2); */
+}
+
+.status-card:active{
+    transform: scale(1.05);
+    /* box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.2); */
+}
+
+.ov-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: -1.25rem;
+}
+
+.item-carousel {
+    margin-top: -100px;
+}
+
+.item-card-img {
+    height: 200px;
+}
+
+.sub-list tr{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sub-list tr:active{
+    transform: scale(1.02);
+}
+
+.full-screen-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2005;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 780px) {
+    .sidebar{
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background: var(--sidebarColor);
+        margin-left: -100%;
+    }
+    .item-carousel-card {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../Bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="./Css/main.css">
+</head>
+<body>
+
+    <section class="main container-fluid">
+        <div class="row">  
+            <!-- Side bar Start -->
+            <div class="col-12 col-lg-3 col-xl-2 vh-100 sidebar">
+                <div class="d-flex justify-content-between align-items-center py-2 mt-3">
+                    <div class="d-flex align-items-center ">
+                        <!-- <span class="logo p-2 rounded d-flex justify-content-center align-items-center mr-2">
+                            <i class="feather-shopping-bag text-dark h4"></i>
+                        </span> -->
+                        <span class="font-weight-bolder h4 text-dark mb-0 text-uppercase">My Shop</span>
+                    </div>
+                    <button class="hide-btn btn btn-light d-block d-lg-none">
+                        <i class="feather-x text-primary" style="font-size: 2em;"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Side bar Start -->
+            <div class="content col-12 col-lg-9 col-xl-10 vh-100 py-1">
+                <div class="row header mb-4">
+                    <div class="col-12">
+                        <div class="tool-bar p-2 rounded d-flex justify-content-between align-items-center shadow">
+                            <button class="menu-btn btn btn-primary d-blockd d-lg-none">
+                                <i class="feather-menu text-light" style="font-size: 2em;"></i>
+                            </button>
+                            <form action="" method="post" class="d-none d-md-block">
+                                <div class="form-inline">
+                                    <input type="text" class="form-control mr-2">
+                                    <button class="btn">
+                                        <i class="feather-search text-white"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="panel btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="./img/myProfile.jpg" class="avatar shadow-sm" alt="">
+                                    <span class="text-white">Myatmin Aung</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">LogOut</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Area End -->
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mb-4 card-1 status-card shadow" onclick="go('https://google.com')">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i class="feather-shopping-bag h1 text-white"></i>
+                                    </div>
+                                    <div class="col-9 fact">
+                                        <p class="mb-1 h3">
+                                            <span class="counter-up text-white">123</span>
+                                        </p>
+                                        <p class="mb-0 text-white-50">Today Order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mb-4 card-2 status-card shadow" onclick="go('https://google.com')">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i class="feather-user h1 text-white"></i>
+                                    </div>
+                                    <div class="col-9 fact">
+                                        <p class="mb-1 h3">
+                                            <span class="counter-up text-white">456</span>
+                                        </p>
+                                        <p class="mb-0 text-white-50">Total User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mb-4 card-3 status-card shadow" onclick="go('https://google.com')">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i class="feather-package h1 text-white"></i>
+                                    </div>
+                                    <div class="col-9 fact">
+                                        <p class="mb-1 h3">
+                                            <span class="counter-up text-white">237</span>
+                                        </p>
+                                        <p class="mb-0 text-white-50">Total Items</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mb-4 card-4 status-card shadow" onclick="go('https://google.com')">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i class="feather-map-pin h1 text-white"></i>
+                                    </div>
+                                    <div class="col-9 fact">
+                                        <p class="mb-1 h3">
+                                            <span class="counter-up text-white">14</span>
+                                        </p>
+                                        <p class="mb-0 text-white-50">Location</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-end">
+                    <div class="col-12 col-xl-7">
+                        <div class="card shadow overflow-hidden mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="mb-0">Order & Viewer</h4>
+                                    <div class="">
+                                        <img src="./img/myProfile.jpg" class="ov-img" alt="">
+                                        <img src="./img/myProfile.jpg" class="ov-img" alt="">
+                                        <img src="./img/myProfile.jpg" class="ov-img" alt="">
+                                        <img src="./img/myProfile.jpg" class="ov-img" alt="">
+                                        <img src="./img/myProfile.jpg" class="ov-img" alt="">
+                                    </div>
+                                </div>
+                                <canvas id="ov" height="150"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-5">
+                        <div class="card shadow mb-4 item-carousel-card">
+                            <div class="card-body">
+                                <div id="carouselExampleIndicators" class="carousel slide item-carousel" data-ride="carousel">
+                                    <ol class="carousel-indicators" style="bottom: -30px;">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="bg-dark active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-dark"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="bg-dark"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="item-card">
+                                                <div class="d-flex justify-content-between align-items-end">
+                                                    <div class="flex-grow-1">
+                                                        <h4 class="mb-0">Coffee Cup</h4>
+                                                        <p class="font-weight-bolder text-black-50 mb-3">500 MMK</p>
+                                                        <div class="progress mb-4">
+                                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="./img/item1.png" class="item-card-img" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="item-card">
+                                                <div class="d-flex justify-content-between align-items-end">
+                                                    <div class="flex-grow-1">
+                                                        <h4 class="mb-0">Stick</h4>
+                                                        <p class="font-weight-bolder text-black-50 mb-3">12000 MMK</p>
+                                                        <div class="progress mb-4">
+                                                            <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="./img/item2.png" class="item-card-img" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="item-card">
+                                                <div class="d-flex justify-content-between align-items-end">
+                                                    <div class="flex-grow-1">
+                                                        <h4 class="mb-0">Note Book</h4>
+                                                        <p class="font-weight-bolder text-black-50 mb-3">3500 MMK</p>
+                                                        <div class="progress mb-4">
+                                                            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="./img/item3.png" class="item-card-img" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="item-card">
+                                                <div class="d-flex justify-content-between align-items-end">
+                                                    <div class="flex-grow-1">
+                                                        <h4 class="mb-0">Name Card</h4>
+                                                        <p class="font-weight-bolder text-black-50 mb-3">1500 MMK</p>
+                                                        <div class="progress mb-4">
+                                                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="./img/item4.png" class="item-card-img" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-5">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="mb-0">Order & Place</h4>
+                                    <div class="">
+                                        <i class="feather-pie-chart h4 mb-0 text-primary"></i>
+                                    </div>
+                                </div>
+                                <canvas id="op" height="307"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-7">
+                        <div class="card overflow-hidden mb-4 shadow">
+                            <div class="">
+                                <div class="d-flex justify-content-between align-items-center p-3">
+                                    <h4 class="mb-0">Subscriber List</h4>
+                                    <div class="">
+                                        <i class="feather-more-vertical h4 mb-0 text-primary"></i>
+                                    </div>
+                                </div>
+                                <table class="table table-hover sub-list mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Company</th>
+                                        <th>Start Date</th>
+                                        <th>Status</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Chrsitopher Rand</td>
+                                        <td>Rand Enterprise LTD.</td>
+                                        <td>Jan 21,2022</td>
+                                        <td><span class="badge badge-pill badge-success">Close</span></td>
+                                        <td>$ 90000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Austin</td>
+                                        <td>ABC Fintech LTD.</td>
+                                        <td>Jan 1,2019</td>
+                                        <td><span class="badge badge-pill badge-danger">Close</span></td>
+                                        <td>$ 1000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aldin Rakić</td>
+                                        <td>ACME Pvt LTD.</td>
+                                        <td>Jan 10,2019</td>
+                                        <td><span class="badge badge-pill badge-success">Open</span></td>
+                                        <td>$ 3000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Christina Austin</td>
+                                        <td>ABC LTD.</td>
+                                        <td>Jan 1,209</td>
+                                        <td><span class="badge badge-pill badge-danger">Close</span></td>
+                                        <td>$ 10000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Rand</td>
+                                        <td>ABC Fintech LTD.</td>
+                                        <td>Jan 1,2019</td>
+                                        <td><span class="badge badge-pill badge-danger">Close</span></td>
+                                        <td>$ 3000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>İris Yılmaz</td>
+                                        <td>Collboy Tech LTD.</td>
+                                        <td>Jan 12,2019</td>
+                                        <td><span class="badge badge-pill badge-success">Open</span></td>
+                                        <td>$ 2000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lidia Livescu</td>
+                                        <td>My Fintech LTD.</td>
+                                        <td>Jan 14,2019</td>
+                                        <td><span class="badge badge-pill badge-danger">Close</span></td>
+                                        <td>$ 1100.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Austin</td>
+                                        <td>ABC Fintech LTD.</td>
+                                        <td>Jan 1,2019</td>
+                                        <td><span class="badge badge-pill badge-danger">Close</span></td>
+                                        <td>$ 1000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aldin Rakić</td>
+                                        <td>ACME Pvt LTD.</td>
+                                        <td>Jan 10,2019</td>
+                                        <td><span class="badge badge-pill badge-success">Open</span></td>
+                                        <td>$ 3000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>İris Yılmaz</td>
+                                        <td>Collboy Tech LTD.</td>
+                                        <td>Jan 12,2019</td>
+                                        <td><span class="badge badge-pill badge-success">Open</span></td>
+                                        <td>$ 2000.00</td>
+                                        <td class="center-align"><a href="#"><i class="feather-trash-2 text-danger"></i></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Area End -->
+            </div>
+        </div>
+    </section>
+
+    <script src="../JQuery/Js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../Bootstrap-4/js/bootstrap.bundle.min.js"></script>
+    <script src="../WayPoint/lib/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Js/app.js"></script>
+    <script src="./Js/dashboard.js"></script>
+    
+</body>
+</html>
